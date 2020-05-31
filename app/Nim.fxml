@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="529.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.NimController">
+	<children>
+      <Label fx:id="overLabel" layoutX="140.0" layoutY="150.0" opacity="0.0" text="GameOver">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+		<MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#NewGame" text="New Game" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveGame" text="Save Game" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadGame" text="Load Game" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<HBox fx:id="gameWindow" layoutX="68.0" layoutY="124.0" prefHeight="377.0" prefWidth="548.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="267.0" AnchorPane.topAnchor="25.0">
+			<children>
+				<AnchorPane maxWidth="462.0" prefHeight="280.0" prefWidth="0.0">
+					<children>
+						<VBox prefHeight="375.0" prefWidth="411.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<children>
+								<HBox alignment="CENTER" prefHeight="94.0" prefWidth="200.0" spacing="20.0">
+									<children>
+										<ImageView fx:id="fyr11" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+									</children>
+								</HBox>
+								<HBox alignment="CENTER" prefHeight="94.0" prefWidth="200.0" spacing="20.0">
+									<children>
+										<ImageView fx:id="fyr21" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr22" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr23" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+									</children>
+								</HBox>
+								<HBox alignment="CENTER" prefHeight="94.0" prefWidth="200.0" spacing="20.0">
+									<children>
+										<ImageView fx:id="fyr31" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr32" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr33" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr34" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr35" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+									</children>
+								</HBox>
+								<HBox alignment="CENTER" prefHeight="94.0" prefWidth="200.0" spacing="20.0">
+									<children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+										<ImageView fx:id="fyr41" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr42" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr43" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr44" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr45" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr46" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+										<ImageView fx:id="fyr47" fitHeight="94.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="file:/C:/Users/Vegard/tdt4100-v2020-master/git/tdt4100-v2020-students/ovinger/src/Bilder/fyrestikker.png" />
+											</image>
+										</ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+									</children>
+								</HBox>
+							</children>
+						</VBox>
+					</children>
+				</AnchorPane>
+				<VBox prefHeight="375.0" prefWidth="456.0">
+					<children>
+						<AnchorPane prefHeight="94.0" prefWidth="200.0">
+							<children>
+								<TextField fx:id="row1Text" layoutX="45.0" layoutY="35.0" prefHeight="25.0" prefWidth="50.0" promptText="0" />
+								<Button layoutX="95.0" layoutY="35.0" mnemonicParsing="false" onAction="#handeOnClick1" text="Remove" />
+							</children>
+						</AnchorPane>
+						<AnchorPane prefHeight="94.0" prefWidth="200.0">
+							<children>
+								<TextField fx:id="row2Text" layoutX="45.0" layoutY="35.0" prefHeight="25.0" prefWidth="50.0" promptText="0" />
+								<Button layoutX="95.0" layoutY="35.0" mnemonicParsing="false" onAction="#handeOnClick2" text="Remove" />
+							</children>
+						</AnchorPane>
+						<AnchorPane prefHeight="94.0" prefWidth="200.0">
+							<children>
+								<TextField fx:id="row3Text" layoutX="45.0" layoutY="31.0" prefHeight="25.0" prefWidth="50.0" promptText="0" />
+								<Button layoutX="95.0" layoutY="31.0" mnemonicParsing="false" onAction="#handeOnClick3" text="Remove" />
+							</children>
+						</AnchorPane>
+						<AnchorPane prefHeight="94.0" prefWidth="200.0">
+							<children>
+								<TextField fx:id="row4Text" layoutX="45.0" layoutY="35.0" prefHeight="25.0" prefWidth="50.0" promptText="0" />
+								<Button layoutX="95.0" layoutY="35.0" mnemonicParsing="false" onAction="#handeOnClick4" text="Remove" />
+							</children>
+						</AnchorPane>
+					</children>
+				</VBox>
+			</children>
+		</HBox>
+	</children>
+</AnchorPane>
